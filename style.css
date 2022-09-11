@@ -9,9 +9,7 @@
 body{
     background-image: url("assets/fondo.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100vw;
-    overflow-x: hidden;
+    background-size: cover;
     background-position: center;
     height: 100vh;
     overflow-y: auto;
