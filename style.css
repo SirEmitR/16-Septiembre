@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+.banderas{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.banderas .izq,
+.banderas .drc{
+    width: 45%;
+    max-width: 200px;
+    position: absolute;
+}
+.banderas .izq{
+    left: 0;
+    top: 0;
+}
+.banderas .drc{
+    right: 0;
+    top: 0;
+}
+
+.sombrero{
+    width: 30%;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+      background-color: lightblue;
+    }
+    .banderas .izq, .banderas .drc{
+        max-width: 200px;
+        min-width: 125px;
+    }
+  }
