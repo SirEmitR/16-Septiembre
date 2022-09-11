@@ -71,6 +71,29 @@ body{
     top: 32%;
 }
 
+.maraca{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    position: relative;
+}
+.invitacion{
+    position: absolute;
+    width: 100%;
+    font-family: 'Open Sans SemiCondensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fecha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width: 750px) {
     .banderas .izq, .banderas .drc{
         width: 170px;
@@ -91,6 +114,26 @@ body{
 
     .decoracion img{
         width: 300px;
+    }
+    .maraca{
+        margin: 0px auto;
+        margin-top: 50px;
+        width: 300px;
+    }
+    .maraca img{
+        width: 60px;
+    }
+    .invitacion p{
+        width: 210px;
+        font-size: 18px;
+        color: #FFF;
+        text-align: center;
+    }
+    .fecha{
+        margin-top: 50px;
+    }
+    .fecha img{
+        width: 200px;
     }
   }
   .luis-fest img{
