@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 *{
     margin: 0;
@@ -45,9 +45,9 @@ body{
 }
 
 .titulo{
-    font-family: 'Hind', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
     width: 100%;
 }
 
