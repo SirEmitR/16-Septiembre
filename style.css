@@ -1,22 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #000;
+    background-image: url("assets/fondo.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
 }
 
 .banderas{
     position: relative;
     width: 100%;
     padding: 0px;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items:flex-start;
 }
-
+.red{
+    color: #FF3333;
+}
+.green{
+    color: #006838;
+}
 .banderas .izq,
 .banderas .drc{
     width: 45%;
@@ -32,18 +43,25 @@ body{
     top: 0;
 }
 
-.sombrero{
-    width: 30%;
-    min-width: 100px;
-    max-width: 200px;
+.titulo{
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
 }
 
 @media only screen and (max-width: 750px) {
-    body {
-      background-color: lightblue;
-    }
     .banderas .izq, .banderas .drc{
-        max-width: 200px;
-        min-width: 125px;
+        width: 170px;
+    }
+    .sombrero{
+        width: 120px;
+        margin-top: 50px;
+    }
+    .titulo span{
+        width: 100%;
+        display: block;
+        font-size: 50px;
+        padding: 0px;
     }
   }
