@@ -72,7 +72,7 @@ body{
     top: 32%;
 }
 
-.maraca{
+.maraca, .guitarras{
     
     
     display: flex;
@@ -88,7 +88,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.direccion{
+    width: 100%;
+    font-family: 'Open Sans SemiCondensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
 .fecha{
     width: 100%;
     display: flex;
@@ -122,7 +129,33 @@ body{
     justify-content: center;
     align-items: center;
 }
+.mapa{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.guitarras{
+    position: absolute;
+}
 
+.mapa button{
+    background-color: #006838;
+    color: #FFF;
+    font-family: 'Luckiest Guy', cursive;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #FF3333;
+}
+
+.confirmacion-asistencia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width: 750px) {
     .banderas .izq, .banderas .drc{
         width: 170px;
@@ -189,7 +222,41 @@ body{
         overflow-x: hidden;
     }
     .terraza img{
+        width: 310px;
+    }
+    .direccion p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .mapa{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mapa{
+        width: 280px;
+        height: 200px;
+    }
+    .mapa button{
+        margin-top: 20px;
+        margin-bottom: 80px;
+        font-size: 20px;
+        padding: 3px;
+    }
+    .guitarras{
         width: 350px;
+        overflow-x: hidden;
+        bottom: 0;
+    }
+    .guitarras img{
+        width: 90px;
+
+    }
+    .confirmacion-asistencia{
+    }
+    .confirmacion-asistencia img{
+        width: 300px;
     }
   }
   .luis-fest img{
