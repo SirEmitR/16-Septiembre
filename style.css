@@ -68,7 +68,7 @@ body{
 .decoracion{
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: 35%;
 }
 
 @media only screen and (max-width: 750px) {
