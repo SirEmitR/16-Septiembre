@@ -8,10 +8,11 @@
 }
 body{
     background-image: url("assets/fondo.png");
+    background-color: #000;
     background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     overflow-y: auto;
 }
 
@@ -93,7 +94,35 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
 }
+.fecha p{
+    font-family: 'Open Sans SemiCondensed', sans-serif;
+    color: #FFF;
+    text-align: center;
+}
+.countdown{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hora{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terraza{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 750px) {
     .banderas .izq, .banderas .drc{
         width: 170px;
@@ -131,9 +160,36 @@ body{
     }
     .fecha{
         margin-top: 50px;
+        padding-bottom: 120px;
     }
     .fecha img{
         width: 200px;
+    }
+    .fecha p{
+        font-size: 34px;
+    }
+    .countdown{
+        bottom: 0;
+        overflow-x: hidden;
+    }
+    .countdown img{
+        width: 480px;
+    }
+    .numeros{
+        bottom: 0;
+    }
+    .hora{
+        margin-top: 50px;
+    }
+    .hora img{
+        width: 200px;
+    }
+    .terraza{
+        margin-top: 50px;
+        overflow-x: hidden;
+    }
+    .terraza img{
+        width: 350px;
     }
   }
   .luis-fest img{
