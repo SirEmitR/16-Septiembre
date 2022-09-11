@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("assets/fondo.svg");
+    background-image: url("assets/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,6 +51,26 @@ body{
     width: 100%;
 }
 
+.luis-fest{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.luis-fest span{
+    font-family: 'Luckiest Guy', cursive;
+    position: absolute;
+    color: #FFF;
+}
+.viva{
+    position: relative;
+}
+.decoracion{
+    position: absolute;
+    width: 100%;
+    top: 45%;
+}
+
 @media only screen and (max-width: 750px) {
     .banderas .izq, .banderas .drc{
         width: 170px;
@@ -68,4 +88,11 @@ body{
     .titulo{
         margin-top: 10px;
     }
+
+    .decoracion img{
+        width: 300px;
+    }
+  }
+  .luis-fest img{
+    width: 130px;
   }
