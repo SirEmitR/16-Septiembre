@@ -37,7 +37,7 @@
     color: #FFF;
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: 700;
-    transition: 0.3s ease-out;
+    transition: 0.7s ease-out;
 
 }
 #loader.disable{
@@ -256,6 +256,16 @@ button, button, .enviando, .enviado, .error{
     font-family: 'Luckiest Guy', cursive;
 }
 @media only screen and (max-width: 850px) {
+    .fondo{
+        display: none;
+    }
+    body{
+        background-image: url("assets/fondo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .banderas .izq, .banderas .drc{
         width: 170px;
     }
@@ -451,10 +461,10 @@ button, button, .enviando, .enviado, .error{
  
   @media only screen and (min-width: 850px) {
     .banderas .izq, .banderas .drc{
-        width: 170px;
+        width: 400px;
     }
     .sombrero{
-        width: 120px;
+        width: 200px;
         margin-top: 50px;
     }
     .titulo span{
@@ -464,7 +474,7 @@ button, button, .enviando, .enviado, .error{
         padding: 0px;
     }
     .titulo{
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .decoracion img{
