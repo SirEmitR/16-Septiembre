@@ -2,6 +2,14 @@
 const diaEvento = 'Sun Sep 15 2022 18:30:00';
 
 
+window.addEventListener('load', function () {
+    this.setTimeout(() =>{
+        this.document.getElementById("loader").classList.add("disable");
+    }, 1000)
+    this.setTimeout(()=>{
+        this.document.getElementById("loader").style.display="none";
+    }, 2000)
+})
 
 const getRemainTime = deadline =>{
     let now = new Date(),
@@ -137,5 +145,4 @@ document.getElementById('form')
         alert(JSON.stringify(err));
         });
    },2000)
-   console.log("Enviado")
 });

@@ -23,6 +23,28 @@ body{
     z-index: -1;
     transform: translate(-50%, -50%);
 }
+#loader{
+    z-index: 3000;
+    width: 100vw;
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 700;
+    transition: 1s ease-out;
+
+}
+#loader.disable{
+    opacity: 0;
+}
+#loader img{
+    width: 200px;
+}
 main{
     z-index: 10;
 }
@@ -191,6 +213,7 @@ button, button, .enviando, .enviado, .error{
 .formulario form input, select, textarea{
     outline: none;
     border: 1px solid #FF3333;
+    border-radius: 0px;
     background-color: #006837b6;
     color:#FFF;
 }
