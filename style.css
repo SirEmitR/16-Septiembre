@@ -15,7 +15,19 @@ body{
     background-position: center;
     overflow-y: auto;
 }
-
+#animacion{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+main{
+    z-index: 10;
+}
 .banderas{
     position: relative;
     width: 100%;
@@ -83,14 +95,16 @@ body{
 .invitacion{
     position: absolute;
     width: 100%;
-    font-family: 'Open Sans SemiCondensed', sans-serif;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .direccion{
     width: 100%;
-    font-family: 'Open Sans SemiCondensed', sans-serif;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +119,8 @@ body{
     position: relative;
 }
 .fecha p{
-    font-family: 'Open Sans SemiCondensed', sans-serif;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 700;
     color: #FFF;
     text-align: center;
 }
@@ -300,11 +315,16 @@ button, button{
     }
     .formulario form{
         width: 300px;
-        font-family: 'Open Sans SemiCondensed', sans-serif;
+        font-family: 'Open Sans Bold', sans-serif;
+        font-weight: 700;
     }
     .formulario form label{
         font-size: 18px;
+        margin-top: 5px;
         
+    }
+    select{
+        border-radius: 0px;
     }
     .formulario form input, select, textarea{
         font-size: 18px;
@@ -324,12 +344,15 @@ button, button{
     .dudas img{
         width: 200px;
     }
+    .dudas .direccion p{
+        font-size: 16px
+    }
     .cactus img{
-        width: 120px;
+        width: 100px;
     }
     .cactus{
         bottom: 0;
-        height: 150px;
+        height: 120px;
     }
     .dudas button{
         margin-top: 20px;
@@ -339,20 +362,16 @@ button, button{
     .luis-fest img{
         width: 130px;
       }
+    .cactus .izq{
+        transform: translateX(-20px);
+    }
+    .cactus .drc{
+        transform: translateX(20px);
+    }
   }
  
 
-  #animacion{
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    position: fixed;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-    z-index: 0;
 
-    transform: translate(-50%, -50%);
-}
 .ball {
     position: absolute;
     border-radius: 100px;
