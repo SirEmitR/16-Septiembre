@@ -8,6 +8,7 @@
     <title>!Viva México!</title>
 </head>
 <body>
+    <div id="animacion"></div>
     <div class="banderas">
         <img class="izq" src="assets/banderas-izquierda.svg"/>
         <img class="drc" src="assets/banderas-derecha.svg"/>
@@ -64,6 +65,41 @@
     <div class="confirmacion-asistencia">
         <img src="assets/confirmacion-asistencia.png"/>
     </div>
+    <div class="formulario">
+        <form action="">
+            <label for="nombre">Nombre del invitado:</label>
+            <input type="text" name="nombre" id="nombre" required/>
+            <label for="ir">¿Podrás asistir? Selecciona una opción:</label>
+            <div class="selectcontainer">
+                <select required name="ir" id="ir">
+                    <option>Si voy a ir</option>
+                    <option>No podre ir</option>
+                    <option>Confirmare más tarde</option>
+                </select>
+                <span class="custom-arrow"></span>
+            </div>
+            <label for="cantidad">Número de invitados:</label>
+            <input type="number" name="cantidad" id="cantidad" required/>
+            <label for="msj">Mensaje para el festejado:</label>
+            <textarea name="msj" id="msj" ></textarea>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <div class="dudas">
+        <div class="cactus">
+            <img src="assets/cactus-izquirda.svg" />
+            <img src="assets/cactus-defecha.svg" />
+        </div>
+        <img src="assets/dudas.png"/>
+        <div class="direccion">
+            <p>
+                Escribenos tus dudas al<br>siguiente chat de Whatsapp
+            </p>
+        </div>
+        <button>WHATSAPP</button>
+    </div>
 
+    
 </body>
+<script src="scripts.js"></script>
 </html>
