@@ -416,6 +416,7 @@ button, button, .enviando, .enviado, .error{
         margin-top: 40px;
         padding-bottom: 20px;
         overflow-y: hidden;
+        overflow-x: hidden;
     }
     .dudas img{
         width: 200px;
