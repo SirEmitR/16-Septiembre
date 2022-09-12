@@ -274,14 +274,14 @@ footer{
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans Bold', sans-serif;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 .logo{
 }
 .logo img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 .contacto{
     align-self: flex-start;
@@ -289,7 +289,7 @@ footer{
     font-size: 12px;
 }
 .contacto h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 .contacto h3{
     font-size: 12px;
