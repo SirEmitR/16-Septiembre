@@ -6,17 +6,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
-main{
-    height: 100%;
+.fondo{
     width: 100%;
-    background-image: url("assets/fondo.png");
-    background-color: #000;
-    background-repeat: repeat-y;
-    background-clip: border-box;
-    background-size: contain;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
 }
 #animacion{
     width: 100%;
@@ -41,7 +35,7 @@ main{
     color: #FFF;
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: 700;
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
 
 }
 #loader.disable{
