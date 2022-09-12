@@ -7,17 +7,16 @@
     box-sizing: border-box;
 }
 body{
+    
+}
+main{
+    height: 100%;
+    width: 100%;
     background-image: url("assets/fondo.png");
     background-color: #000;
     background-repeat: repeat-y;
     background-clip: border-box;
     background-size: contain;
-}
-#fondo{
-    height: 100%;
-    width: 100%;
-    z-index: -11;
-    position: absolute;
 }
 #animacion{
     width: 100%;
