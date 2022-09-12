@@ -255,6 +255,21 @@ button, button, .enviando, .enviado, .error{
     position: absolute;
     font-family: 'Luckiest Guy', cursive;
 }
+footer{
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-family: 'Open Sans Bold', sans-serif;
+    padding: 5px 5px 5px 5px;
+}
 @media only screen and (max-width: 850px) {
     .fondo{
         display: none;
