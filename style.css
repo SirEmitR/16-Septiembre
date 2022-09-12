@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: -2;
+    z-index: -20;
 }
 #animacion{
     width: 100%;
