@@ -42,7 +42,16 @@
             <p>Septiembre<br>2022</p>
             <div class="countdown">
                 <img src="assets/countdown.png"/>
+                <div class="numeros">
+                    <div class="contenedor-count">
+                        <div id="dia" class="dia">00</div>
+                        <div id="hora" class="horas">00</div>
+                        <div id="min" class="minutos">00</div>
+                        <div id="seg" class="segundos">00</div>
+                    </div>
+                </div>
             </div>
+            
         </div> 
         <div class="hora">
             <img src="assets/hora.png"/>
@@ -57,7 +66,7 @@
         </div>
         <div class="mapa">
             <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14937.790737317031!2d-103.4243663!3d20.6106012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8495219372e7ec4c!2sTerraza%20Diamante!5e0!3m2!1ses-419!2smx!4v1662938360693!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <button>COMO LLEGAR</button>
+            <a href="https://www.google.com/maps/place/Terraza+Diamante/@20.6106062,-103.426555,17z/data=!3m1!4b1!4m5!3m4!1s0x8428ad1cad7b268b:0x8495219372e7ec4c!8m2!3d20.6106012!4d-103.4243663" target="_blank">COMO LLEGAR</a>
             <div class="guitarras">
                 <img class="izq" src="assets/guitarra-izquierda.svg"/>
                 <img class="drc" src="assets/guitarra-derecha.svg"/>
@@ -67,7 +76,7 @@
             <img src="assets/confirmacion-asistencia.png"/>
         </div>
         <div class="formulario">
-            <form action="">
+            <form action="" id="form" name="contact">
                 <label for="nombre">Nombre del invitado:</label>
                 <input type="text" name="nombre" id="nombre" required/>
                 <label for="ir">¿Podrás asistir? Selecciona una opción:</label>
@@ -80,10 +89,13 @@
                     <span class="custom-arrow"></span>
                 </div>
                 <label for="cantidad">Número de invitados:</label>
-                <input type="number" name="cantidad" id="cantidad" required/>
+                <input type="number" name="cantidad" id="cantidad" required min="0"/>
                 <label for="msj">Mensaje para el festejado:</label>
                 <textarea name="msj" id="msj" ></textarea>
-                <button>Enviar</button>
+                <button id="enviar">Enviar</button>
+            <div id="enviando" class="enviando">ENVIANDO</div>
+            <div id="enviado" class="enviado">ENVIADO</div>
+            <div id="enviar" class="error">ERROR</div>
             </form>
         </div>
         <div class="dudas">
@@ -97,11 +109,14 @@
                     Escribenos tus dudas al<br>siguiente chat de Whatsapp
                 </p>
             </div>
-            <button>WHATSAPP</button>
+            <a id="whats" target="_blank" href="https://wa.me/523334586596?text=%C2%A1¡Hola Luis! Tengo una duda...%20">WHATSAPP</a>
         </div>
     </main>
 
     
 </body>
 <script src="scripts.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                                
+<script type="text/javascript">emailjs.init('AxiNZ-x8ZT509uDhU') </script>
 </html>

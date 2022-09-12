@@ -9,11 +9,9 @@
 body{
     background-image: url("assets/fondo.png");
     background-color: #000;
-    background-repeat: no-repeat;
     background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
-    overflow-y: auto;
+    background-clip: border-box;
+    background-size: contain;
 }
 #animacion{
     width: 100%;
@@ -154,9 +152,10 @@ main{
 }
 .guitarras{
     position: absolute;
+    z-index: -10;
 }
 
-button, button{
+button, button, .enviando, .enviado, .error{
     background-color: #006838;
     color: #FFF;
     font-family: 'Luckiest Guy', cursive;
@@ -164,7 +163,15 @@ button, button{
     border-radius: 5px;
     border: 2px solid #FF3333;
 }
-
+.dudas a, .mapa a{
+    background-color: #006838;
+    color: #FFF;
+    font-family: 'Luckiest Guy', cursive;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #FF3333;
+    text-decoration: none;
+}
 .confirmacion-asistencia{
     width: 100%;
     display: flex;
@@ -206,12 +213,25 @@ button, button{
 .cactus{
     position: absolute;
     width: 100%;
-    z-index: 0;
+    z-index: -10;
 }
 .direccion{
     z-index: 10;
 }
-@media only screen and (max-width: 750px) {
+
+.numeros{
+    position: absolute;
+}
+.contenedor-count{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.contenedor-count div{
+    position: absolute;
+    font-family: 'Luckiest Guy', cursive;
+}
+@media only screen and (max-width: 850px) {
     .banderas .izq, .banderas .drc{
         width: 170px;
     }
@@ -264,11 +284,37 @@ button, button{
         width: 480px;
     }
     .numeros{
-        bottom: 0;
+        width: 350px;
+        top: 30px;
+        height: 100px;
+        color: #FFF;
+        font-size: 30px;
+        padding: 5px;
+    }
+    .dia{
+        left: 30px;
+        top: 10px;
+        transform: rotate(30deg);
+    }
+    .horas{
+        left: 113px;
+        top: 35px;
+        transform: rotate(10deg);
+    }
+    .minutos{
+        left: 195px;
+        top: 35px;
+        transform: rotate(-10deg);
+    }
+    .segundos{
+        left: 270px;
+        top: 13px;
+        transform: rotate(-20deg);
     }
     .hora{
         margin-top: 50px;
     }
+    
     .hora img{
         width: 200px;
     }
@@ -293,11 +339,11 @@ button, button{
         width: 280px;
         height: 200px;
     }
-    .mapa button{
+    .mapa a{
         margin-top: 20px;
         margin-bottom: 80px;
         font-size: 20px;
-        padding: 3px;
+        padding: 3px 3px 3px 3px;
     }
     .guitarras{
         width: 350px;
@@ -329,12 +375,20 @@ button, button{
     .formulario form input, select, textarea{
         font-size: 18px;
         width: 100%;
-        padding: 5px;
+        padding: 5px 5px 5px 5px;
     }
     .formulario form button{
         margin-top: 20px;
         font-size: 20px;
-        padding: 3px;
+        padding: 3px 3px 3px 3px;
+    }
+    .enviando, .enviado, .error{
+        margin-top: 20px;
+        font-size: 20px;
+        width: max-content;
+        padding: 3px 3px 3px 3px;
+        align-self: center;
+        display: none;
     }
     .dudas{
         margin-top: 40px;
@@ -354,10 +408,10 @@ button, button{
         bottom: 0;
         height: 120px;
     }
-    .dudas button{
+    .dudas a{
         margin-top: 20px;
         font-size: 20px;
-        padding: 3px;
+        padding: 3px 3px 3px 3px;
     }
     .luis-fest img{
         width: 130px;
