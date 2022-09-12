@@ -257,55 +257,57 @@ button, button, .enviando, .enviado, .error{
 }
 footer{
     width: 100%;
-    background-color: #000;
-    color: #FFF;
+    background-color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 footer a{
     text-decoration: none;
-    color: #FFF;
+    color: #000;
     font-size: 16px;
     font-family: 'Open Sans Bold', sans-serif;
     padding: 5px 5px 5px 5px;
 }
 footer{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     font-family: 'Open Sans Bold', sans-serif;
     padding-top: 20px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+    padding-bottom: 10px;
 }
 .logo{
-    padding: 10px;
+}
+.logo img{
     width: 100px;
     height: 100px;
 }
 .contacto{
     align-self: flex-start;
     margin-left: 10px;
+    font-size: 12px;
 }
 .contacto h2{
-    text-align: center;
-    font-size: 24px;
+    font-size: 18px;
 }
 .contacto h3{
-    font-size: 16px;
+    font-size: 12px;
 }
 .contacto img{
-    width: 30px;
+    width: 20px;
     margin: 5px;
 }
 .whatsapp{
     align-self: flex-start;
 }
+.contacto h4, .contacto h3{
+    text-align: left;
+}
 .whatsapp a{
     display: flex;
     cursor: pointer;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 @media only screen and (max-width: 850px) {
